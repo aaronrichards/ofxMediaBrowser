@@ -102,7 +102,25 @@ void ofxMediaBrowser::dragEvent(ofDragInfo &dragInfo)
     
 }
 
+//--------------------------------------------------------------
+// Visibility
+//--------------------------------------------------------------
+void ofxMediaBrowser::show()
+{
+    mediaUI->setVisible(true);
+}
 
+//--------------------------------------------------------------
+void ofxMediaBrowser::hide()
+{
+    mediaUI->setVisible(false);
+}
+
+//--------------------------------------------------------------
+void ofxMediaBrowser::toggle()
+{
+    mediaUI->toggleVisible();
+}
 
 //--------------------------------------------------------------
 // Helpers

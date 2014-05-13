@@ -34,6 +34,10 @@ class ofxMediaBrowser
         void setup(int x, int y);
         void setup(int x, int y, int width, int height);
         void exit(ofEventArgs &e);
+    
+        void show();
+        void hide();
+        void toggle();
         
         void dragEvent(ofDragInfo &dragInfo);
         void guiEvent(ofxUIEventArgs &e);

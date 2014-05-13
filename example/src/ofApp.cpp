@@ -35,7 +35,17 @@ void ofApp::guiEvent(ofxMediaBrowserEvent &e)
 }
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){
+void ofApp::keyPressed(int key)
+{
+    
+    switch (key) {
+        case ' ':
+            fileDropArea.toggle();
+            break;
+            
+        default:
+            break;
+    }
 
 }
 
